@@ -1,21 +1,21 @@
-# Promisfy remote-file-size
+# promisify remote-file-size
 
 Get the size of a remote file with, under the hood is used: https://www.npmjs.com/package/remote-file-size
 
-[![npm](https://badgen.net/npm/v/promisfy-remote-file-size)](https://www.npmjs.com/package/promisfy-remote-file-size)
+[![npm](https://badgen.net/npm/v/promisify-remote-file-size)](https://www.npmjs.com/package/promisify-remote-file-size)
 
 ## Install
 
 ```bash
-$ npm install --save promisfy-remote-file-size
+$ npm install --save promisify-remote-file-size
 # or for the cli tool
-$ npm install -g promisfy-remote-file-size
+$ npm install -g promisify-remote-file-size
 ```
 
 ## Usage
 
 ```bash
-$ promisfy-remote-file-size http://registry.npmjs.org/argsplit/-/argsplit-1.0.2.tgz
+$ promisify-remote-file-size http://registry.npmjs.org/argsplit/-/argsplit-1.0.2.tgz
 // => 1.55 kB
 ```
 
@@ -30,11 +30,11 @@ remote(url).then(size => size) //219 kB
 ## CLI Usage
 
 ```
-$ promisfy-remote-file-size --help
+$ promisify-remote-file-size --help
 
-promisfy-remote-file-size - get the size of a remote file
+promisify-remote-file-size - get the size of a remote file
 
-  usage: promisfy-remote-file-size [options] <url>
+  usage: promisify-remote-file-size [options] <url>
 
   options:
     -h, --help                  show help and usage
@@ -52,7 +52,7 @@ promisfy-remote-file-size - get the size of a remote file
 
 ```
 
-`promisfy-remote-file-size` uses `request` under the hood, so you could
+`promisify-remote-file-size` uses `request` under the hood, so you could
 also pass an options object instead of the url string.
 
 ## Author
