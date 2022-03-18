@@ -1,32 +1,29 @@
 #!/usr/bin/env node
 
-const help      = require('help')()
-    , remote    = require('../')
-    , pb        = require('pretty-bytes')
-    , nopt      = require('noptd')
-    , knownOpts = {
-    raw                : Boolean
-    , help             : Boolean
-    , version          : Boolean
-    , auth             : String
+const help = require('help')()
+    , remote = require('../')
+    , pb = require('pretty-bytes')
+    , nopt = require('noptd')
+    , knownOpts = { raw: Boolean
+    , help: Boolean
+    , version: Boolean
+    , auth: String
     , 'follow-redirect': Boolean
-    , 'max-redirects'  : Number
+    , 'max-redirects': Number
 }
-    , shortHand = {
-    r  : ['--raw']
+    , shortHand = { r: ['--raw']
     , h: ['--help']
     , v: ['--version']
     , a: ['--auth']
     , f: ['--follow-redirect']
     , m: ['--max-redirects']
 }
-    , defs      = {
-    raw                : false
+    , defs = { raw: false
     , 'follow-redirect': true
-    , 'max-redirects'  : 2
+    , 'max-redirects': 2
 }
-    , parsed    = nopt(knownOpts, shortHand)(defs)
-    , package   = require('../package')
+    , parsed = nopt(knownOpts, shortHand)(defs)
+    , package = require('../package')
 
 if (parsed.help) {
     return help(0)
