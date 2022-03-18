@@ -1,0 +1,17 @@
+promisify-remote-file-size - get the size of a remote file
+
+  usage: promisify-remote-file-size [options] <url>
+
+  options:
+    -h, --help                  show help and usage
+    -v, --version               show version
+    -r, --raw                   show raw result (no pretty formatting)
+    -f, --follow-redirect       follow redirects (true by default)
+    -m, --max-redirects <num>   set max number of redirects (defaults to 2)
+
+  example:
+    promisify-remote-file-size https://peakdevs.com/muhamed-resume.pdf
+    // => 219 kB
+
+    promisify-remote-file-size --raw https://peakdevs.com/muhamed-resume.pdf
+    // => 218884

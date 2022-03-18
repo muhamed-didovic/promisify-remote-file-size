@@ -1,0 +1,45 @@
+{
+    "name": "promisify-remote-file-size",
+    "version": "0.0.1",
+    "description": "Promisify remote file size lib",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "files": [
+        "bin",
+        "index.js"
+    ],
+    "bin": {
+        "promisify-remote-file-size": "bin/cli.js"
+    },
+    "scripts": {
+        "test": "ava"
+    },
+    "keywords": [
+        "remote",
+        "file",
+        "size"
+    ],
+    "author": "Muhamed Didovic (github.com/muhamed-didovic)",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/muhamed-didovic/promisify-remote-file-size.git"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "bluebird": "^3.7.2",
+        "help": "~3.0.2",
+        "noptd": "~2.0.1",
+        "pretty-bytes": "~5.6.0",
+        "remote-file-size": "^3.0.5"
+    },
+    "devDependencies": {
+        "ava": "^4.1.0",
+        "nock": "^13.2.4"
+    },
+    "homepage": "https://github.com/muhamed-didovic/promisify-remote-file-size",
+    "bugs": {
+        "url": "https://github.com/muhamed-didovic/promisify-remote-file-size/issues"
+    }
+}
