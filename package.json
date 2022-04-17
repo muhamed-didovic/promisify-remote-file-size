@@ -1,6 +1,6 @@
 {
     "name": "promisify-remote-file-size",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Promisify remote file size lib",
     "main": "index.js",
     "scripts": {

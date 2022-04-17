@@ -21,7 +21,7 @@ $ promisify-remote-file-size http://registry.npmjs.org/argsplit/-/argsplit-1.0.2
 ```
 
 ```bash
-const remote = require('priomisify-remote-file-size')
+const remote = require('promisify-remote-file-size')
 const url = 'https://peakdevs.com/muhamed-resume.pdf'
 await remote(url) // 219 kB
 #or
